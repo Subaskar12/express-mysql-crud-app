@@ -1,0 +1,11 @@
+# Use an official MySQL base image
+FROM mysql:latest
+
+# Set environment variables for MySQL
+ENV MYSQL_ROOT_PASSWORD 12345
+ENV MYSQL_DATABASE crud_app
+# ENV MYSQL_USER root
+ENV MYSQL_PASSWORD 12345
+
+# Expose the MySQL port
+EXPOSE 3306
